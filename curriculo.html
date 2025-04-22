@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidaturas</title>
+  </head>
+  <body>
+    <h1>Candidatura</h1>
+
+    <form method="Post">
+      <label for="texto" >Primeiro Nome</label>
+      <input type="text" name="name" id="texto"required />
+      <br />
+      <label for="texto" >Apelido</label>
+      <input type="text" name="name" id="texto" required/>
+      <br />
+      <label for="telemovel" >Numero de telemovel</label>
+      <input type="tel"name="telephone" id="telemovel"placeholder="+351 969696966"pattern="(+?\d[\d\s-]{7,}\d)"  maxlength="12" required/><br />
+      <label for="correio" required>Email</label>
+      <input type="email"name="email" id="correio" autocomplete="placeholder" placeholder="mail@server.com"required/>
+      <br />
+
+      <h4>Link para Website ou Facebook</h4>
+      <label for="website">Website</label>
+      <input type="radio" name="link" value="site" id="website" checked />
+
+      <label for="facebook">Facebook</label>
+      <input type="radio" name="link" value="face" id="facebook" />
+      <br />
+      <label for="sitio-na-web">Link</label>
+      <input type="url" name="website" id="sitio-na-web"/>
+      <br />
+      <label for="ficheiro">Carregar Curriculo</label><br />
+      <input type="file" name="file" id="ficheiro" required />
+      <br />
+      <label for="texto">Nome da última empresa onde trabalhou</label>
+      <input type="text" name="name" id="texto" required />
+      <br />
+      <label for="data" required>Data de início do cargo nessa empresa</label>
+                <input type="date" name="date" id="data" value="20024-10-10" required>
+                <br>
+
+                <label for="data" >Data de término do cargo nessa empresa </label>
+                <input type="date" name="date" id="data" value="20024-10-10"><br>
+
+                <label for="dias" required>Quantos meses precisam de dar à casa</label>
+      <input type="number" name="rescisao" id="dias" min="1" max="24" required/>
+      <br />
+     <label for="mensagem">Cover Letter</label>
+      <textarea name="message" id="message"  minlength="10" maxlength="100"></textarea>
+      <br><br>
+
+      <label for="metodo">Como ouvis te falar de nós</label>
+      <select name="pais" id="country" required ><!-- pode se pot tb o multiple -->
+        <option value="">Escolha opção</option>
+        <option value="Face" >Facebook</option>
+        <option value="google">Google</option>
+        <option value="friends">Amigos</option>
+        <option value="linkedin">Linkedin</option>
+      </select>
+      <br><br>
+
+      <input type="submit" value="enviar">
+      <input type="reset" value="reset"><br>
+    </form>
+  </body>
+</html>
